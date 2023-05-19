@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <form method="POST" id="formContacto">
+                <h2>Inicio de sesión</h2>
+                <div class="grupo">
+                    <input type="text" name="txtCorreo" id="txtCorreo" required><span class="barra"></span>
+                    <label>Correo Electrónico*</label>
+                    <div id="txtCorreoErr" class="error"></div>
+                </div>
+
+                <div class="grupo">
+                    <input type="password" name="txtPass" id="txtPass" required><span class="barra"></span>
+                    <label>Contraseña:</label>
+                    <div id="txtPassErr" class="error"></div>
+                </div>
+
+                <button type="submit">Ingresar</button>
+                <a href="">Recuperar Contraseña</a>
+            </form>
+        </section>
+    </main>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

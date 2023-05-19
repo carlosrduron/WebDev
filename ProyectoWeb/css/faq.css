@@ -1,0 +1,27 @@
+:root {
+    --pink: #f5d5ff;
+    --green: #c6e4de;
+    --blue: #b0daf0;
+    --salmon: #FDD5D5;
+    --h_c: #fff0f0;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --white: rgb(238, 238, 238);
+    --black: #000;
+    --c_m: rgb(220, 20, 60);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 5em;
+    min-height: calc(100vh - 105px);
+    text-align: center;
+    background-color: var(--white);
+}
+
+main i {
+    font-style: italic;
+}

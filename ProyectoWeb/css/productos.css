@@ -1,0 +1,114 @@
+:root {
+    --pink: #f5d5ff;
+    --green: #c6e4de;
+    --blue: #b0daf0;
+    --salmon: #FDD5D5;
+    --white: rgb(238, 238, 238);
+    --black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section.cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.cards h2 {
+    display: block;
+    padding: 1em;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    background-color: var(--green);
+    color: var(--black);
+}
+
+section.cards .card {
+    display: flex;
+    width: 520px;
+    height: 300px;
+    margin: 1em 0.5em;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 3px 3px 5px rgb(128 128 128);
+    transition: all 400ms ease;
+    background-color: var(--white);
+}
+
+section.cards .card:hover {
+    box-shadow: 5px 5px 20px #333333;
+    transform: translateY(-3%);
+}
+
+.card img {
+    width: 50%;
+    border-radius: 5px 0 0 5px;
+}
+
+section.cards .card .content {
+    margin: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content h3 {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 8px 8px;
+}
+
+.content .price p {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.content p {
+    text-align: center;
+    font-size: 14px;
+    margin: 0px 4px 4px 0px;
+}
+
+.content form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .cantidad {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+.cantidad input {
+    text-align: center;
+}
+
+form button {
+    border: none;
+    background-color: var(--green);
+    font-size: 14px;
+    color: var(--black);
+    font-weight: bold;
+    padding: 0.5em 0.5em;
+    box-sizing: border-box;
+    width: 100%;
+    box-shadow: 3px 3px 5px rgb(128 128 128);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.content span {
+    margin-right: 5px;
+}
